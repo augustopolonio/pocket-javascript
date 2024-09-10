@@ -27,8 +27,8 @@ app.post(
     const { title, desiredWeeklyFrequency } = request.body
 
     await createGoal({
-      title: title,
-      desiredWeeklyFrequency: desiredWeeklyFrequency,
+      title,
+      desiredWeeklyFrequency,
     })
   }
 )
