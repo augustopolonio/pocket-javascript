@@ -50,7 +50,7 @@ export async function getWeekPendingGoals() {
       goalCompletionCounts,
       eq(goalCompletionCounts.goalId, goalsCreatedUpToWeek.id)
     )
-    .toSQL()
+  // .toSQL() //to debug in drizzle studio
 
   return {
     pendingGoals,
