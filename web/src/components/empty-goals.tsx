@@ -15,7 +15,7 @@ export function EmptyGoals() {
 
       <DialogTrigger asChild>
         <Button>
-          <Plus />
+          <Plus className="size-4" />
           Cadastrar meta
         </Button>
       </DialogTrigger>
