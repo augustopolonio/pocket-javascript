@@ -65,7 +65,7 @@ export function Summary() {
       {/* TODO: Add undo (desfazer) */}
       <div className="flex flex-col gap-6">
         <h2 className="text-xl font-medium">Sua semana</h2>
-        {Object.entries(data.goalsPerDay).map(([date, goals]) => {
+        {data.goalsPerDay ? Object.entries(data.goalsPerDay).map(([date, goals]) => {
           const weekDay = dayjs(date).format('dddd')
           const formattedDate = dayjs(date).format('DD[ de ]MMMM')
 
@@ -92,7 +92,7 @@ export function Summary() {
               </ul>
             </div>
           )
-        })}
+        }) : null}
       </div>
     </div>
   )
